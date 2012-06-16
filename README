@@ -1,0 +1,3 @@
+To build, type the following commands:
+qmake
+make
