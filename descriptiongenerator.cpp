@@ -128,6 +128,7 @@ QString DescriptionGenerator::parseHtml(QString s)
 		else if (state == '_' && *i == '}')
 		{
 			ret.append("</span>");
+			state = 0;
 		}
 		else if (state == 0 && *i == '<')
 		{
