@@ -164,11 +164,7 @@ DescriptionPreview::DescriptionPreview(QString _code, QWidget *parent): QWidget(
 	connect(b, SIGNAL(clicked()), this, SLOT(save()));
 	w->setHtml(code);
 	setLayout(v);
-}
-
-void DescriptionPreview::closeEvent(QCloseEvent *)
-{
-	deleteLater();
+	setAttribute(Qt::WA_DeleteOnClose);
 }
 
 void DescriptionPreview::save()

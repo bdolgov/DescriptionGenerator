@@ -38,8 +38,6 @@ class DescriptionPreview : public QWidget
 		void save();
 	private:
 		QString code;
-	protected:
-		void closeEvent(QCloseEvent *);
 };
 
 #endif // DESCRIPTIONGENERATOR_HPP
